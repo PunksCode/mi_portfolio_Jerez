@@ -14,7 +14,7 @@
 </head>
 <body>
     <!-- Sección del Menú  -->
-    <div class="tudo">
+    <div class="todo">
     <section class="menu">
         <header class="menu__header">
             <img class="logo__inicio" src="assets\vector.png">
@@ -34,7 +34,7 @@
     <!-- Sección del Header/Title/Hero -->
     <section class="title">
         <div class="title__div">
-            <img class="title__profile" src="assets\profile.png">
+            <img class="title__profile" src="assets\profile.png" alt="Imagen-perfil">
             <div class="title__container">
                 <h2 class="title__bio">Mi nombre es Agustín Jerez y soy desarrollador web</h2>
                 <h3 class="title__subsection">Soy desarrollador web especializado en front-end y actualmente estoy estudiando programación en php en la Facultad de ingenieria UNJU y participando del proyecto Oracle ONE en Alura Latam.</h3>
@@ -199,8 +199,8 @@
                 <h3 class="experience__text">Challenge Alura Codificador </h3>
                     <div class="experience__description">
                         <!-- Pon el enlace del proyecto en Github o GithubPages -->
-                            <span class="experience__repo"><a href="https://github.com/alura-challenges/challenge-one-encriptador-latam"><button class="experiencia__botao--repo">Repositório</button></a></span>
-                            <span class="experience__demo"><a href=""><button class="experience__botao--demo">Ver demo</button></a></span>
+                            <span class="experience__repo"><a href="https://github.com/PunksCode/Proyecto-ONE"><button class="experiencia__botao--repo">Repositório</button></a></span>
+                            <span class="experience__demo"><a href="https://punkscode.github.io/Proyecto-ONE/"><button class="experience__botao--demo">Ver demo</button></a></span>
                     </div>
             </div>
         </div>  
@@ -228,12 +228,12 @@
                     <h2 class="formcontato__title">Contacto</h2>
                     <h3 class="formcontato__subtext">¿Quieres contactarme?</h3>
                     <h3 class="formcontato__subtext">Complete el siguiente formulario y me pondré en contacto con usted lo antes posible. </h3>
-                    <form class="formcontato__form" name="form">
+                    <form class="formcontato__form" name="form" action="https://formsubmit.co/agusxxpunk77@gmail.com" method="POST">
                         <input class="formcontato__input" type="text" name="nombre" placeholder="Nombre">
                         <input class="formcontato__input" type="email" name="email" placeholder="E-mail">
                         <input class="formcontato__input" type="text" name="asunto" placeholder="Assunto">
                         <textarea class="formcontato__textarea" rows="5" cols="40" id="mensagem" name="mensaje" placeholder="Mensaje"></textarea>
-                        <button type="submit" class="formcontato__botao">Enviar mensaje</button>
+                        <button type="submit" class="formcontato__botao" data-form-btn>Enviar mensaje</button>
                     </form>
                 </div>
             </div>

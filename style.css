@@ -273,6 +273,9 @@ section.formcontato{
     color: #ffffff;
     border: none;
 }
+.formcontato__botao:hover{
+    cursor: pointer;
+}
 /*footeer*/
 
 section.footer{
