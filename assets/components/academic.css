@@ -1,0 +1,30 @@
+/* Experiencia Académica*/
+.academic__title{
+    font-weight: bold;
+    font-size: 32px;
+    text-align: center;
+}
+.academic__courses{
+    display: flex;
+    justify-content: center;
+}
+/*Tablet*/
+@media (max-width: 768px) {
+/*.academic__courses__box{
+    display: flex;
+    flex-wrap: wrap;
+}*/
+.academic__courses__item__img{
+    width: 224px;
+    display: flex;
+    justify-content: center;
+}
+.academic__courses__item__title{
+    font-size: 16px;
+    text-align: center;
+} 
+.academic__courses__item__subtitle{
+    font-size: 14px;
+    text-align: center;
+}
+}

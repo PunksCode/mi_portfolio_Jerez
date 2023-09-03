@@ -1,0 +1,47 @@
+/*Contacto*/
+.formcontato__contacto{
+    display: flex;
+}
+.formcontato__text{
+    margin-left: 1rem;
+}
+.formcontato__title{
+    margin-top: 0px;
+    font-weight: bold;
+    font-size: 32px;
+}
+.formcontato__subtext{
+    margin-top: 0px;
+    font-size: 16px;
+}
+.formcontato__form{
+    display: flex;
+    flex-direction: column;
+}
+.formcontato__input{
+    width: 656px;
+    height: 56px;
+    margin-bottom: 1rem;
+}
+.formcontato__textarea{
+    width: 656px;
+    height: 133px;
+    margin-bottom: 2rem;
+    resize: none;
+}
+.formcontato__botao{
+    width: 144px;
+    height: 51px;
+    background: var(--col-de-bot);
+    color: #ffffff;
+    border: none;
+}
+.formcontato__botao:hover{
+    cursor: pointer;
+}
+/*Tablet*/
+@media (max-width: 768px) {
+    .formcontato__img {
+        display: none;
+    }
+}

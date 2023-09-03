@@ -1,0 +1,22 @@
+/*Sección Hobbies*/
+.hobbies__title{
+    font-weight: bold;
+    font-size: 32px;
+    text-align: center;
+}
+.hobbies__line{
+    display: flex;
+    justify-content: center;
+}
+/*Tablet*/
+@media (max-width: 768px) {
+.hobbies__line{
+    display: flex;
+    flex-wrap: wrap;
+}
+.hobbies__box{
+    width: 224px;
+    display: flex;
+    justify-content: center;
+} 
+}

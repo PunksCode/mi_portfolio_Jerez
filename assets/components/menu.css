@@ -1,0 +1,58 @@
+/*Utilización en mi CSS del Metodo BEM*/
+
+/*Sección Menu*/
+
+section.menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+    .menu__header{
+        display: flex;
+}
+    .logo__inicio{
+        width: 24px;
+        height: 24px;
+        margin: auto;
+        padding-left: 1rem;
+}
+    .menu__title{
+        padding-left: 1rem;
+        font-size: 28px;
+}
+    .menu__list{
+        display: flex;
+}
+    .menu__list__item{
+        padding-right: 2rem;
+        transition: transform 0.2s;
+}
+    .menu__list__item:hover{
+        transform: scale(1.1);
+}
+    .menu__list__item__contacto{
+        display: flex;
+        font-weight: bold;
+}
+/*Tablet*/
+    @media (max-width: 768px) {
+
+        /* Menú */
+        section.menu {
+            flex-direction: column; 
+            text-align: center; 
+        }
+        .menu__header {
+            margin-bottom: 1rem;
+        }
+        .menu__title{
+            font-size: 28px;
+        }
+        .menu__list {
+            flex-direction: column; 
+        }
+        .menu__list__item {
+            padding: 1rem 0;
+        }     
+}
+        

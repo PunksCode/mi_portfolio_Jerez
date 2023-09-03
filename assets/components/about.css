@@ -1,0 +1,15 @@
+/*Sección About*/
+
+section.about{
+    padding-left: 2rem;
+}
+.about__container{
+    padding-right: 1rem;
+}
+.about__title{
+    font-weight: bold;
+    font-size: 32px;
+}
+.about__paragraph{
+    font-size: 16px
+}

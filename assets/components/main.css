@@ -1,0 +1,29 @@
+/*CSS Reset / Normalize*/
+/* Hemos disponibilizado el básico de reset de estilos. Si quieren, añadan más informaciones 
+en las secciones señaladas */
+
+:root{
+    /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
+   --col-de-fondo: #F5F5F5;
+   --col-de-link: #000;
+   --col-de-letra:#464646;
+   --col-de-bot: #2A7AE4;
+   --col-de-title:#D6D6C1
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--col-de-fondo) ;
+    font-family: 'Raleway';
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    color: var(--col-de-letra);
+}
+ol, ul,li {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--col-de-link);
+}

@@ -1,0 +1,23 @@
+/*Sección Skills*/
+.skills__title{
+    font-weight: bold;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.skills__line{
+    display: flex;
+    justify-content: center;
+}
+/*Tablet*/
+@media (max-width: 768px) {
+ .skills__line{
+        display: flex;
+        flex-wrap: wrap;
+}
+    .skills__box{
+        width: 224px;
+        display: flex;
+        justify-content: center;
+} 
+}

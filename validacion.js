@@ -1,6 +1,15 @@
 //Haz tú validación en javascript acá
-const btn = document.querySelector("[data-form-btn]")
+document.addEventListener('DOMContentLoaded', function() {
+    const generatePdfButton = document.getElementById('generatePdfButton');
 
-console.log (btn)
-
-
+    generatePdfButton.addEventListener('click', function() {
+        let pdf = new jsPDF('p', 'pt', 'a4');
+        pdf.html(document.body, {
+            callback: function (pdf) {
+                pdf.save('documentoPDF1.pdf');
+            },
+            x: 10,
+            y: 10
+        });
+    });
+});

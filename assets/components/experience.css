@@ -1,0 +1,72 @@
+/* experiencia*/
+
+section.experience{
+    padding-left: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+.experience__section__title{
+    font-weight: bold;
+    font-size: 32px;
+    text-align: center;
+}
+.experiencie__box{
+    display: flex;
+    margin-bottom: 4rem;
+}
+.experience__img{
+    width: 752px;
+    height: 406px;
+}
+.experience__info{
+    margin: auto;
+    margin-left: 1rem;
+    width: 368px;
+}
+.experience__title{
+    font-weight: bold;
+    font-size: 22px;
+}
+.experience__text{
+    font-size: 16px;
+}
+.experience__repo{
+    font-size: 16px;
+    margin-right:1rem;
+}
+.experiencia__botao--repo{
+    border: 1px solid var(--col-de-bot);
+    color: var(--col-de-bot);
+    width: 116px;
+    height: 51px;
+    font-size: 16px;
+}
+.experiencia__botao--repo:hover{
+    cursor: pointer;
+}
+.experience__botao--demo{
+    background: var(--col-de-bot);
+    width: 116px;
+    height: 51px;
+    font-size: 16px;
+    color: #ffffff;
+    border: none;
+}
+.experience__botao--demo:hover{
+    cursor: pointer;
+}
+/*Tablet*/
+@media (max-width: 768px) {
+.experiencie__box{
+    display: flex;
+    flex-direction: column;
+}
+.experience__img{
+    width: 704px;
+    height: 320px;
+}
+.experience__info{
+   margin: 16px 0;
+}
+}
+    
