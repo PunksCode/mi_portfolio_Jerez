@@ -35,24 +35,41 @@ section.menu{
         font-weight: bold;
 }
 /*Tablet*/
-    @media (max-width: 768px) {
-
-        /* Menú */
-        section.menu {
-            flex-direction: column; 
-            text-align: center; 
-        }
-        .menu__header {
+@media (max-width: 768px) {
+    section.menu {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+    }
+    .menu__header {
             margin-bottom: 1rem;
         }
-        .menu__title{
+    .menu__title{
             font-size: 28px;
         }
-        .menu__list {
+    .menu__list {
             flex-direction: column; 
         }
-        .menu__list__item {
+    .menu__list__item {
             padding: 1rem 0;
         }     
 }
-        
+/*Mobile*/
+@media (max-width: 425px) {
+.section.menu {
+        flex-direction: column; 
+        text-align: center; 
+    }
+.menu__header {
+        margin-bottom: 0;
+    }
+.menu__title{
+        font-size: 26px;
+    }
+.menu__list {
+        padding-left:0;
+    }
+.menu__list__item {
+        padding: 0.30rem;
+    }     
+}      

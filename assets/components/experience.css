@@ -69,4 +69,33 @@ section.experience{
    margin: 16px 0;
 }
 }
-    
+/*Mobile*/
+@media (max-width: 425px) {
+    .experience__section__title{
+        font-size: 22px;
+    }
+    ul{
+        padding-inline-start: 0px;
+    }
+    .experience__img {
+        width: 296px;
+        height: 144px;
+    }
+    .experience__title{
+        font-size: 16px;
+    }
+    .experience__text{
+        font-size: 14px;
+        font-weight: 100;
+    }
+    .experiencia__botao--repo {
+        width: 104px;
+        height: 40px;
+        font-size: 14px;
+    }
+    .experience__botao--demo {
+        width: 104px;
+        height: 40px;
+        font-size: 14px;
+    }
+}   

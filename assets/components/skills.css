@@ -21,3 +21,24 @@
         justify-content: center;
 } 
 }
+/*Mobile*/
+@media (max-width: 425px) {
+    .skills__title{
+        font-size: 22px;
+    }
+    .skills__box{
+        width: 156px;
+        display: flex;
+        justify-content: center;
+} 
+    .skills__name{
+        font-size: 16px;
+        margin-top: 8px;
+    }
+    ul{
+        padding-inline-start: 0px;
+    }
+    .skills__img{
+        text-align: center;
+    }
+}

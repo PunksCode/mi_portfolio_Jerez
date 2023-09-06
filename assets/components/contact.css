@@ -45,3 +45,28 @@
         display: none;
     }
 }
+/*Mobile*/
+@media (max-width: 425px) {
+    .formcontato{
+        margin-left: 0.75rem;
+    }
+    .formcontato__title {
+        font-size: 22px; 
+        }
+    .formcontato__subtext{
+        font-weight: 100;
+        }
+    .formcontato__input{
+        width: 296px;
+        height: 56px;
+        }
+    .formcontato__textarea{
+        width: 296px;
+        height: 133px;
+        }
+    .formcontato__botao{
+        width: 133px;
+        height: 40px;
+        }
+}      
+    

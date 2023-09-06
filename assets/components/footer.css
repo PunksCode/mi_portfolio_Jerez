@@ -1,8 +1,4 @@
 /*footer*/
-
-section.footer{
-   
-}
 .downloader__btn{
     width: 150px;
     height: 51px;
@@ -17,3 +13,16 @@ section.footer{
 .footer__rodape{
     text-align: center;
 }
+/*Mobile*/
+@media (max-width: 425px) {
+    .downloader__btn {
+        margin: 25px auto;
+        width: 144px;
+        height: 40px;
+        font-size: 16px;
+}
+    .copyright{
+        font-weight: 400;
+    }
+}      
+    

@@ -1,6 +1,6 @@
 /*Sección Title*/
 
-section.title{
+.title{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -25,7 +25,6 @@ section.title{
     display: flex;
     flex-direction: column;
     padding-left: 2rem;
-
 }
 .title__bio{
     font-weight: bold;
@@ -62,3 +61,38 @@ section.title{
         font-size: 16px;
     }  
 }
+/*Mobile*/
+@media (max-width: 425px) {
+    .title{
+        align-items: stretch;
+    }
+    .title__container {
+        padding: 0 1rem;
+        text-align: center;
+        max-width: 100%
+    }
+    .title__div {
+        display: flex;
+        flex-direction: column;
+    }
+    .title__profile{
+        margin:1rem  auto;
+    }
+    .title__bio{
+        margin: 1rem 0;
+    }
+    .title__subsection{
+        font-size: 14px;
+    
+    }
+    .title__network{
+        padding-left:0;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .title__network__item{
+        font-size: 14px;
+        margin-bottom: 10px;
+        padding-right: 10px;
+    }  
+}   
