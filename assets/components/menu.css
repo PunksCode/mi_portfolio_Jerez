@@ -6,6 +6,7 @@ section.menu{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: #B6D1E3;
 }
     .menu__header{
         display: flex;
@@ -16,9 +17,28 @@ section.menu{
         margin: auto;
         padding-left: 1rem;
 }
-    .menu__title{
+    .menu__title {
         padding-left: 1rem;
         font-size: 28px;
+        display: block;
+        font-family: monospace;
+        white-space: nowrap;
+        border-right: 4px solid;
+        width: 12ch;
+        animation: typing 2s steps(12), blink .5s infinite step-end alternate;
+        overflow: hidden;
+}
+
+    @keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+    @keyframes blink {
+    50% {
+        border-color: transparent;
+    }
 }
     .menu__list{
         display: flex;
@@ -56,6 +76,9 @@ section.menu{
 }
 /*Mobile*/
 @media (max-width: 425px) {
+    .logo__inicio{
+        padding-left: 0;
+    }
 .section.menu {
         flex-direction: column; 
         text-align: center; 
@@ -65,6 +88,7 @@ section.menu{
     }
 .menu__title{
         font-size: 26px;
+        padding-left: 8px;
     }
 .menu__list {
         padding-left:0;

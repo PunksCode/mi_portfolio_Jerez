@@ -1,4 +1,7 @@
 /*footer*/
+.footer{
+    background-color: #B6D1E3;
+}
 .downloader__btn{
     width: 150px;
     height: 51px;
@@ -6,12 +9,16 @@
     color: #ffffff;
     border: none;
     font-size: 16px;
+    margin-top: 16px;
 }
 .downloader__btn:hover{
     cursor: pointer;
 }
 .footer__rodape{
     text-align: center;
+}
+.copyright{
+    margin-bottom: 0;
 }
 /*Mobile*/
 @media (max-width: 425px) {

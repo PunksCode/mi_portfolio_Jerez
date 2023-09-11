@@ -4,6 +4,8 @@ section.experience{
     padding-left: 2rem;
     display: flex;
     flex-direction: column;
+    background-color:#AFC1E9;
+    ;
 }
 .experience__section__title{
     font-weight: bold;
@@ -13,6 +15,7 @@ section.experience{
 .experiencie__box{
     display: flex;
     margin-bottom: 4rem;
+    ;
 }
 .experience__img{
     width: 752px;

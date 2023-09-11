@@ -10,17 +10,38 @@
     display: flex;
     flex-direction: row-reverse;
 }
-.title__profile{
+.title__profile {
     width: 368px;
     height: 368px;
     border-radius: 100%;
-    padding-right: 2rem;
-    margin: 10px 0;
+    margin: 10px 2rem 10px 0; /* 10px de margen arriba y abajo, 2rem de margen a la derecha, 0 de margen a la izquierda */
+    border: 4px solid;
+    animation: borderAnimation 5s linear infinite alternate;
 }
-.title__profile:hover{
+@keyframes borderAnimation {
+    0% {
+        border-color: #80A1E9;
+   
+    }
+    25% {
+        border-color: #B8AEE6;
+      
+    }
+    50% {
+        border-color: #C5B3E6;
+  
+    }
+    75% {
+        border-color: #D3B8E6;
+  
+    100% {
+        border-color: #B6D1E3;
+    }
+    }
+}
+.title__profile:hover {
     cursor: pointer;
 }
-
 .title__container {
     display: flex;
     flex-direction: column;

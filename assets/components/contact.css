@@ -1,6 +1,7 @@
 /*Contacto*/
 .formcontato__contacto{
     display: flex;
+    background: #E6DCB8;
 }
 .formcontato__text{
     margin-left: 1rem;
