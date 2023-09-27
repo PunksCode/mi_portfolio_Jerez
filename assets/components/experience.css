@@ -4,8 +4,7 @@ section.experience{
     padding-left: 2rem;
     display: flex;
     flex-direction: column;
-    background-color:#AFC1E9;
-    ;
+    background:linear-gradient(to bottom right, #F7F2BB, #DBE45E, #DDDEA0, #A1A664);
 }
 .experience__section__title{
     font-weight: bold;
@@ -39,24 +38,26 @@ section.experience{
 }
 .experiencia__botao--repo{
     border: 1px solid var(--col-de-bot);
-    color: var(--col-de-bot);
+    color: var(--col-de-letra);
     width: 116px;
     height: 51px;
     font-size: 16px;
 }
 .experiencia__botao--repo:hover{
     cursor: pointer;
+    transform: scale(1.1);
 }
 .experience__botao--demo{
     background: var(--col-de-bot);
     width: 116px;
     height: 51px;
     font-size: 16px;
-    color: #ffffff;
+    color: var(--col--de--letra);
     border: none;
 }
 .experience__botao--demo:hover{
     cursor: pointer;
+    transform: scale(1.1);
 }
 /*Tablet*/
 @media (max-width: 768px) {

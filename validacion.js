@@ -1,15 +1,6 @@
 //Haz tú validación en javascript acá
-document.addEventListener('DOMContentLoaded', function() {
-    const generatePdfButton = document.getElementById('generatePdfButton');
+const imagenModoNoche = document.querySelector(".sun__nigth");
 
-    generatePdfButton.addEventListener('click', function() {
-        let pdf = new jsPDF('p', 'pt', 'a4');
-        pdf.html(document.body, {
-            callback: function (pdf) {
-                pdf.save('documentoPDF1.pdf');
-            },
-            x: 10,
-            y: 10
-        });
-    });
+imagenModoNoche.addEventListener("click", function() {
+  console.log("Se ha hecho clic en la imagen");
 });

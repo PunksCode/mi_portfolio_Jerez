@@ -6,9 +6,9 @@ en las secciones señaladas */
     /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
    --col-de-fondo: #F5F5F5;
    --col-de-link: #000;
-   --col-de-letra:#464646;
-   --col-de-bot: #2D4780;
-   --col-de-title:#D6D6C1;
+   --col-de-letra:#000;
+   --col-de-bot: #FEF4C3;
+   --col-de-title:#FDF6D5;
 }
 
 body {

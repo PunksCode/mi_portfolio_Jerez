@@ -36,7 +36,7 @@
     .academic__courses{
         display: flex;
         flex-direction: column;
-    } 
+    }
     ul{
         padding-inline-start: 0px;
     }

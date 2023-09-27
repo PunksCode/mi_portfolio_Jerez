@@ -35,7 +35,10 @@
                 <li class="menu__list__item"><a href="#formacion">Formación</a></li>
                 <li class="menu__list__item"><a href="#xp">Proyectos</a></li>
                 <li class="menu__list__item"><a href="#contacto">Contacto</a></li></ul>
-        </nav>
+            </nav>
+            <div class="noche__dia">
+                <img class="sun__nigth" src="assets/img/mododia.png" alt="modo noche o dia">
+            </div>
     </section>
 
     <!-- Sección del Header/Title/Hero -->
@@ -44,13 +47,13 @@
             <img class="title__profile" src="assets/img/profile.png" alt="Imagen-perfil">
             <div class="title__container">
                 <h2 class="title__bio">Mi nombre es Agustín Jerez y soy programador web</h2>
-                <h3 class="title__subsection">Soy desarrollador web especializado en front-end y actualmente estoy estudiando programación en php en la Facultad de ingenieria UNJU y participando del proyecto Oracle ONE en Alura Latam.</h3>
+                <h3 class="title__subsection">Soy desarrollador web especializado en front-end actualmente estoy estudiando programación en php en la Facultad de ingenieria UNJU y soy parte de la beca del proyecto Oracle ONE en Alura Latam.</h3>
                 <ul class="title__network">
                      <!-- Pon los enlaces de tus redes sociales favoritas -->
-                    <li class="title__network__item"><a href="https://github.com/PunksCode">Github <img src="assets/img/arrow.png"> </a></li>
-                    <li class="title__network__item"><a href="https://www.linkedin.com/in/pablo-agust%C3%ADn-jerez-482823270/">Linkedin <img src="assets/img/arrow.png"></a></li>
-                    <li class="title__network__item"><a href="https://www.instagram.com/agustinpunks/">Instagram <img src="assets/img/arrow.png"></a></li>
-                    <li class="title__network__item"><a href="">Curriculum <img src="assets/img/arrow.png"></a></li>
+                    <li class="title__network__item"><a href="https://github.com/PunksCode">Github <img src="assets/img/arrow.png" alt="flecha"></a></li>
+                    <li class="title__network__item"><a href="https://www.linkedin.com/in/pablo-agust%C3%ADn-jerez-482823270/">Linkedin <img src="assets/img/arrow.png" alt="flecha"></a></li>
+                    <li class="title__network__item"><a href="https://www.instagram.com/agustinpunks/">Instagram <img src="assets/img/arrow.png" alt="flecha"></a></li>
+                    <li class="title__network__item"><a href="">Curriculum <img src="assets/img/arrow.png" alt="flecha"></a></li>
                 </ul>
             </div>
         </div>
@@ -64,7 +67,7 @@
             <p class="about__paragraph">Actualmente, estoy estudiando programación con especialización en PHP en la facultad de ingeniería de la UNJU sede Jujuy, y también en Alura de ONE Oracle, una plataforma de educación en línea la especialización de front-end para poder ser un desarrollador full stack lo más completo y eficiente posible. 
                 Estoy emocionado de seguir aprendiendo y creciendo en esta carrera en constante evolución, y estoy buscando oportunidades para aplicar mis habilidades en proyectos desafiantes y emocionantes. Si quieres ponerte en contacto conmigo no dudes en hablarme por mis redes o rellenando el formulario, te estare respondiendo a la brevedad.</p>
             <!-- Si quieres, pon tú firma acá! -->
-            <img src="assets/img/mifirma.png" alt="mi firma">
+            <img class="firma" src="assets/img/mifirma.png" alt="mi firma">
         </div>
     </section>
 
@@ -225,22 +228,36 @@
                     </div>
             </div>
         </div>  
+        <div class="experiencie__box">
+            <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
+            <img class="experience__img" src="assets/img/bdPHP.png" alt="curriculum logo">
+            <div class="experience__info">
+                <h2 class="experience__title">Base de Datos de Movimientos financieros con PHP</h2>
+                <h3 class="experience__text">Para facultad de Ingieneria UNJU</h3>
+                    <div class="experience__description">
+                        <!-- Pon el enlace del proyecto en Github o GithubPages -->
+                            <span class="experience__repo"><a href="https://github.com/PunksCode/bdMovFinanciero"><button class="experiencia__botao--repo">Repositório</button></a></span>
+                    </div>
+            </div>
+        </div>  
     </section>
         <!-- Sección de Contacto -->
         <section class="formcontato" id="contacto">
             <div  class="formcontato__contacto">
-                <div class="formcontato__esquerda">
-                    <img class="formcontato__img" src="assets/img/contact_image.png" alt="contacto logo">
-                </div>
+  
                 <div class="formcontato__text">
                     <h2 class="formcontato__title">Contacto</h2>
                     <h3 class="formcontato__subtext">¿Quieres contactarme?</h3>
                     <h3 class="formcontato__subtext">Complete el siguiente formulario y me pondré en contacto con usted lo antes posible. </h3>
                     <form class="formcontato__form" name="form" action="https://formsubmit.co/agusxxpunk77@gmail.com" method="POST">
-                        <input class="formcontato__input" type="text" name="nombre" placeholder="Nombre">
-                        <input class="formcontato__input" type="email" name="email" placeholder="E-mail">
-                        <input class="formcontato__input" type="text" name="asunto" placeholder="Asunto">
-                        <textarea class="formcontato__textarea" rows="5" cols="40" id="mensagem" name="mensaje" placeholder="Mensaje"></textarea>
+                        <label class="label" for="nombre">Nombre:</label>
+                        <input class="formcontato__input" type="text" id="nombre" name="nombre" placeholder="Nombre">
+                        <label class="label" for="email">Email:</label>
+                        <input class="formcontato__input" type="email" id="email" name="email" placeholder="E-mail">
+                        <label class="label" for="asunto">Asunto:</label>
+                        <input class="formcontato__input" type="text" id="asunto"name="asunto" placeholder="Asunto">
+                        <label class="label" for="mensaje">Dejanos tu mensaje:</label>
+                        <textarea class="formcontato__textarea" rows="5" cols="40" id="mensaje" name="mensaje" placeholder="Mensaje"></textarea>
                         <button type="submit" class="formcontato__botao" data-form-btn>Enviar mensaje</button>
                     </form>
                 </div>
@@ -257,9 +274,9 @@
         </section>
     </div>
  <!-- Script del documento JavaScript -->
+<script src="validacion.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
-<script src="validacion.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.6/jspdf.plugin.autotable.min.js"></script>
 

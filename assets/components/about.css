@@ -2,17 +2,26 @@
 
 section.about{
     padding-left: 2rem;
-    background-color: #E6E6E6;
+    background: url(/assets/img/about.png) no-repeat;
+    background-size: cover;
 }
 .about__container{
     padding-right: 1rem;
 }
 .about__title{
     font-weight: bold;
-    font-size: 32px;
+    font-size: 42px;
+    margin-top: 0;
+    padding-top: 20px;
+    text-align: center;
 }
 .about__paragraph{
-    font-size: 16px
+    font-size: 16px;
+    text-align: center;
+}
+.firma{
+    padding-bottom: 20px;
+    mix-blend-mode: color-burn;
 }
 /*Mobile*/
 @media (max-width: 425px) {

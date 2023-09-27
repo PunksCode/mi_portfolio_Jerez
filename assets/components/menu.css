@@ -2,14 +2,15 @@
 
 /*Sección Menu*/
 
-section.menu{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #B6D1E3;
+    section.menu{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #ACA775;
 }
     .menu__header{
         display: flex;
+        width: 250px;
 }
     .logo__inicio{
         width: 24px;
@@ -27,6 +28,13 @@ section.menu{
         width: 12ch;
         animation: typing 2s steps(12), blink .5s infinite step-end alternate;
         overflow: hidden;
+}
+    .menu__list{
+        font-size: 18px;
+    }
+
+    .noche__dia:hover{
+        cursor: pointer;
 }
 
     @keyframes typing {
@@ -61,19 +69,28 @@ section.menu{
         text-align: center;
         flex-direction: column;
     }
-    .menu__header {
-            margin-bottom: 1rem;
-        }
+    .logo__inicio{
+        margin-left: 0;
+        padding-left: 0;
+        margin-right: 0;
+    }
     .menu__title{
             font-size: 28px;
         }
     .menu__list {
             flex-direction: column; 
+            padding-left: 0;
+            margin-bottom: 0;
         }
     .menu__list__item {
             padding: 1rem 0;
-        }     
-}
+        }      
+    .sun__nigth{
+        justify-content: center;
+        margin: 0;
+        width: 100px;
+    }
+}   
 /*Mobile*/
 @media (max-width: 425px) {
     .logo__inicio{

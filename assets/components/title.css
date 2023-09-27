@@ -10,6 +10,9 @@
     display: flex;
     flex-direction: row-reverse;
 }
+.title__subsection{
+    margin-right: 2px;
+}
 .title__profile {
     width: 368px;
     height: 368px;
@@ -70,7 +73,6 @@
     .title__profile{
         width: 146px;
         height: 146px;
-        padding-right: 0.5rem;
     }
     .title__bio{
         font-size: 22px;

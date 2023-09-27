@@ -1,18 +1,19 @@
 /*footer*/
 .footer{
-    background-color: #B6D1E3;
+    background-color: #ACA775;
 }
 .downloader__btn{
     width: 150px;
     height: 51px;
     background: var(--col-de-bot);
-    color: #ffffff;
+    color: var(--col-de--letra);
     border: none;
     font-size: 16px;
     margin-top: 16px;
 }
 .downloader__btn:hover{
     cursor: pointer;
+    transform: scale(1.1);
 }
 .footer__rodape{
     text-align: center;

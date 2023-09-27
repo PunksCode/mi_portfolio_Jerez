@@ -1,44 +1,64 @@
 /*Contacto*/
+.formcontato{
+    background:#e6dcb8
+}
 .formcontato__contacto{
     display: flex;
-    background: #E6DCB8;
+    justify-content: center;
+    background-image: url(../img/contacto.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #181810;
 }
-.formcontato__text{
-    margin-left: 1rem;
-}
+
 .formcontato__title{
-    margin-top: 0px;
+    margin: 44px 0 20px 0;
     font-weight: bold;
-    font-size: 32px;
+    font-size: 64px;
+    text-align:center;
 }
 .formcontato__subtext{
     margin-top: 0px;
-    font-size: 16px;
+    font-size: 32px;
+    text-align:center;
 }
 .formcontato__form{
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+.label{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
 }
 .formcontato__input{
     width: 656px;
     height: 56px;
     margin-bottom: 1rem;
+    opacity: 50%;
+    font-size: 18px;
 }
 .formcontato__textarea{
     width: 656px;
     height: 133px;
     margin-bottom: 2rem;
     resize: none;
+    opacity: 50%;
+    font-size: 18px;
+    font-family: 'Raleway';
 }
 .formcontato__botao{
     width: 144px;
     height: 51px;
     background: var(--col-de-bot);
-    color: #ffffff;
+    color: var(--col-de-letra-);
     border: none;
+    margin-bottom: 20px;
 }
 .formcontato__botao:hover{
     cursor: pointer;
+    transform: scale(1.1);
 }
 /*Tablet*/
 @media (max-width: 768px) {
@@ -48,15 +68,17 @@
 }
 /*Mobile*/
 @media (max-width: 425px) {
-    .formcontato{
-        margin-left: 0.75rem;
-    }
     .formcontato__title {
-        font-size: 22px; 
+        font-size: 24px; 
         }
     .formcontato__subtext{
-        font-weight: 100;
+        font-weight: 300;
+        font-size: 20px;
         }
+    .label{
+        font-size: 16px;
+        font-weight: 100;
+    }
     .formcontato__input{
         width: 296px;
         height: 56px;
