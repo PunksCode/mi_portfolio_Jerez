@@ -1,12 +1,14 @@
 /*Sección About*/
 
-section.about{
-    padding-left: 2rem;
+.about{
     background: url(/assets/img/about.png) no-repeat;
     background-size: cover;
+    padding: 50px 30px;
 }
 .about__container{
-    padding-right: 1rem;
+    padding: 0 16px;
+    border: 3px solid #766834;
+    border-radius: 100px;
 }
 .about__title{
     font-weight: bold;
@@ -16,7 +18,7 @@ section.about{
     text-align: center;
 }
 .about__paragraph{
-    font-size: 16px;
+    font-size: 18px;
     text-align: center;
 }
 .firma{

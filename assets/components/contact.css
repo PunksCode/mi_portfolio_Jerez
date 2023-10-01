@@ -35,7 +35,6 @@
 .formcontato__input{
     width: 656px;
     height: 56px;
-    margin-bottom: 1rem;
     opacity: 50%;
     font-size: 18px;
 }
@@ -55,10 +54,16 @@
     color: var(--col-de-letra-);
     border: none;
     margin-bottom: 20px;
+    box-shadow: 5px 5px 10px #000000;
 }
 .formcontato__botao:hover{
     cursor: pointer;
     transform: scale(1.1);
+}
+.input__mensaje__error{
+    margin: 0 0 10px 0;
+    color: red;
+    font-weight: 300;
 }
 /*Tablet*/
 @media (max-width: 768px) {

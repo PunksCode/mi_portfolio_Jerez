@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/myfavicon.png" class="favicon" alt="favicon">
     <link rel="stylesheet" href="assets/components/main.css">
     <link rel="stylesheet" href="assets/components/menu.css">
     <link rel="stylesheet" href="assets/components/title.css">
@@ -14,6 +15,7 @@
     <link rel="stylesheet" href="assets/components/experience.css">
     <link rel="stylesheet" href="assets/components/contact.css">
     <link rel="stylesheet" href="assets/components/footer.css">
+    <link rel="stylesheet" href="assets/components/modoNoche.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
@@ -21,8 +23,8 @@
 </head>
 <body>
     <!-- Sección del Menú  -->
-    <div class="todo">
-    <section class="menu">
+    <div class="todo" id="todo">
+    <section class="menu" id="menu">
         <header class="menu__header">
             <img class="logo__inicio" src="assets/img/vector.png" alt="vector">
             <h3 class="menu__title">¡Hola Mundo!</h3>
@@ -34,11 +36,13 @@
                 <li class="menu__list__item"><a href="#hobbies">Hobbies</a></li>
                 <li class="menu__list__item"><a href="#formacion">Formación</a></li>
                 <li class="menu__list__item"><a href="#xp">Proyectos</a></li>
-                <li class="menu__list__item"><a href="#contacto">Contacto</a></li></ul>
+                <li class="menu__list__item"><a href="#contacto">Contacto</a></li>
+            </ul>
             </nav>
-            <div class="noche__dia">
-                <img class="sun__nigth" src="assets/img/mododia.png" alt="modo noche o dia">
-            </div>
+            <button class="modos__btn" id="modoNocheBtn">
+                <img class="modo__noche" src="assets/img/moon.png" alt="modo noche" onclick()>
+                <img class="modo__dia" src="assets/img/sun.png" alt="modo dia" onclick()>
+            </button>
     </section>
 
     <!-- Sección del Header/Title/Hero -->
@@ -50,10 +54,10 @@
                 <h3 class="title__subsection">Soy desarrollador web especializado en front-end actualmente estoy estudiando programación en php en la Facultad de ingenieria UNJU y soy parte de la beca del proyecto Oracle ONE en Alura Latam.</h3>
                 <ul class="title__network">
                      <!-- Pon los enlaces de tus redes sociales favoritas -->
-                    <li class="title__network__item"><a href="https://github.com/PunksCode">Github <img src="assets/img/arrow.png" alt="flecha"></a></li>
-                    <li class="title__network__item"><a href="https://www.linkedin.com/in/pablo-agust%C3%ADn-jerez-482823270/">Linkedin <img src="assets/img/arrow.png" alt="flecha"></a></li>
-                    <li class="title__network__item"><a href="https://www.instagram.com/agustinpunks/">Instagram <img src="assets/img/arrow.png" alt="flecha"></a></li>
-                    <li class="title__network__item"><a href="">Curriculum <img src="assets/img/arrow.png" alt="flecha"></a></li>
+                    <li class="title__network__item"><a class="links" href="https://github.com/PunksCode">Github <img class="arrow" src="assets/img/arrow.png" alt="flecha"></a></li>
+                    <li class="title__network__item"><a class="links" href="https://www.linkedin.com/in/pablo-agust%C3%ADn-jerez-482823270/">Linkedin <img class="arrow" src="assets/img/arrow.png" alt="flecha"></a></li>
+                    <li class="title__network__item"><a class="links" href="https://www.instagram.com/agustinpunks/">Instagram <img class="arrow" src="assets/img/arrow.png" alt="flecha"></a></li>
+                    <li class="title__network__item"><a class="links" href="">Curriculum <img class="arrow" src="assets/img/arrow.png" alt="flecha"></a></li>
                 </ul>
             </div>
         </div>
@@ -70,7 +74,7 @@
             <img class="firma" src="assets/img/mifirma.png" alt="mi firma">
         </div>
     </section>
-
+    <div class="section__noche">
     <!-- Sección de Skills -->
     <section class="skills" id="skills">
         <h3 class="skills__title">Skills</h3>
@@ -241,6 +245,7 @@
             </div>
         </div>  
     </section>
+</div>
         <!-- Sección de Contacto -->
         <section class="formcontato" id="contacto">
             <div  class="formcontato__contacto">
@@ -251,13 +256,17 @@
                     <h3 class="formcontato__subtext">Complete el siguiente formulario y me pondré en contacto con usted lo antes posible. </h3>
                     <form class="formcontato__form" name="form" action="https://formsubmit.co/agusxxpunk77@gmail.com" method="POST">
                         <label class="label" for="nombre">Nombre:</label>
-                        <input class="formcontato__input" type="text" id="nombre" name="nombre" placeholder="Nombre">
+                        <input class="formcontato__input" type="text" id="nombre" name="nombre" placeholder="Nombre" required data-tipo="nombre">
+                        <div class="input__mensaje__error"></div>
                         <label class="label" for="email">Email:</label>
-                        <input class="formcontato__input" type="email" id="email" name="email" placeholder="E-mail">
+                        <input class="formcontato__input" type="email" id="email" name="email" placeholder="E-mail" required>
+                        <div class="input__mensaje__error"></div>
                         <label class="label" for="asunto">Asunto:</label>
-                        <input class="formcontato__input" type="text" id="asunto"name="asunto" placeholder="Asunto">
+                        <input class="formcontato__input" type="text" id="asunto"name="asunto" placeholder="Asunto" required>
+                        <div class="input__mensaje__error"></div>
                         <label class="label" for="mensaje">Dejanos tu mensaje:</label>
-                        <textarea class="formcontato__textarea" rows="5" cols="40" id="mensaje" name="mensaje" placeholder="Mensaje"></textarea>
+                        <textarea class="formcontato__textarea" rows="5" cols="40" id="mensaje" name="mensaje" placeholder="Mensaje" required></textarea>
+                        <div class="input__mensaje__error"></div>
                         <button type="submit" class="formcontato__botao" data-form-btn>Enviar mensaje</button>
                     </form>
                 </div>

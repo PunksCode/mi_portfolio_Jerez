@@ -36,12 +36,12 @@
     }
     75% {
         border-color: #D3B8E6;
-  
+    }
     100% {
         border-color: #B6D1E3;
     }
     }
-}
+
 .title__profile:hover {
     cursor: pointer;
 }
@@ -63,6 +63,9 @@
 .title__network__item{
     padding-right: 2rem;
     transition: transform 0.2s;
+}
+.links{
+    color: var(--col-de-link);
 }
 .title__network__item:hover{
     transform: scale(1.1);

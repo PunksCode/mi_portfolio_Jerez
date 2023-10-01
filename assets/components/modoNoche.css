@@ -1,0 +1,68 @@
+.night__mode{
+    color: var(--col-de-title);
+}
+.night__mode .modos__btn{
+    background: #594545;
+    border: 1px solid var(--col-de-title)
+}
+.modo__dia__img{
+    background: #000;
+    border-radius:30px;
+    padding: 0 21px 0 3px;
+}
+.modo__noche__img{
+        background:none;
+        padding-left: 10px;
+}
+.night__mode .menu{
+    background: #000;
+}
+.night__mode .menu a, .night__mode .links{
+    color: var(--col-de-link-noche);
+}
+.night__mode .title{
+    background: #25092D;
+}
+.night__mode .arrow{
+    background: inherit;
+}
+.night__mode .about{
+    background: url(/assets/img/about.png) no-repeat #66498c;
+    background-size: cover;
+}
+.night__mode .about__container{
+    border: 3px solid #25092D;
+}
+.night__mode .section__noche{
+    background: linear-gradient(to bottom right, #11011E, #5a2065, #9969af, #500075);
+}
+.night__mode .experience{
+    background: none;
+}
+.night__mode .experience__botao--demo{
+    background: #67279861;
+    color: #FDF6D5
+}
+.night__mode .hobbies__img{
+    mix-blend-mode: multiply;
+}
+.night__mode .formcontato{
+    background:#25092D
+}
+.night__mode .formcontato__botao{
+    background: #6a259e78;
+}
+.night__mode .formcontato__contacto{
+    background-image: none;
+    background: url(/assets/img/contactonoche.png) no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    color: var(--col-de-title);
+}
+.night__mode .footer{
+    background-color: #000;
+}
+.night__mode .downloader__btn{
+    background:#5f306d;
+}
