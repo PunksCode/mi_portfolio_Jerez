@@ -1,7 +1,7 @@
 /*Sección About*/
 
 .about{
-    background: url(/assets/img/about.png) no-repeat;
+    background: url(assets/img/about.png) no-repeat;
     background-size: cover;
     padding: 50px 30px;
 }
