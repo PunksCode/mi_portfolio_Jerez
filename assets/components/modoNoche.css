@@ -27,7 +27,7 @@
     background: inherit;
 }
 .night__mode .about{
-    background: url(/assets/img/about.png) no-repeat #66498c;
+    background: url(../img/about.png) no-repeat #66498c;
     background-size: cover;
 }
 .night__mode .about__container{
@@ -54,7 +54,7 @@
 }
 .night__mode .formcontato__contacto{
     background-image: none;
-    background: url(/assets/img/contactonoche.png) no-repeat;
+    background: url(../img/contactonoche.png) no-repeat;
     background-size: cover;
     display: flex;
     justify-content: center;
